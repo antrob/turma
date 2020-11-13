@@ -1,0 +1,49 @@
+/* turma.css */
+body { font-family: 'Merriweather', serif; }
+
+/* para o nome do aluno */
+.nome { 
+        font-weight: 700;
+        font-size: 1.6em;
+     }
+
+/* para o numero do aluno */
+.numero {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+/* aplicar a Técnica da FlexBox para o Layout */
+ul { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+li { 
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.foto { margin-right: 32px; }
+
+.nome { display: block;}
+
+/*
+.numero { display: none; }
+.info:hover .numero { display: inline;}
+*/
+
+/* Efeito do Redondo na Imagem */
+/* img { border-radius: 50%;} */
+.foto {
+    width: 139px;
+    height: 140px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+
