@@ -21,7 +21,7 @@ ul {
 }
 
 li { 
-    width: 30%;
+    /*width: 30%;  ver Media Queries */
     display: flex;
     align-items: center;
     margin-bottom: 40px;
@@ -45,5 +45,21 @@ li {
     display: flex;
     align-items: center;
     border-radius: 50%;
+}
+
+/* Media Queries para testar a Responsividade */
+@media ( max-width:1200px ) {
+    
+    li { width: 45%; } 
+}
+
+@media ( max-width: 700px ) {
+    
+    li { width:100%; }
+}
+
+@media ( min-width: 1201px) {
+    
+    li { width: 30%; } 
 }
 
